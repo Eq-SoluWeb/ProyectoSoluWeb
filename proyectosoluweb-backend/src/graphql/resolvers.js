@@ -13,7 +13,11 @@ export const resolvers = {
             //if(context.user.auth){
                return Usuario.find();
             //}else {
+<<<<<<< HEAD
                // return true
+=======
+            //    return true
+>>>>>>> Feature_CS
             //}
         },
         unUsuario(parents, args) {

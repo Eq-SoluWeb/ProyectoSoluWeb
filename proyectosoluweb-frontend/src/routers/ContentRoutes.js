@@ -13,6 +13,7 @@ const ContentRoutes = () => {
                     <Routes>
                         <Route path="usuarios/:action" element={<UsuariosPage />} />
                         <Route path="usuarios" element={<UsuariosPage />} />
+                        <Route path="proyectos/:action" element={<ProyectosPage />} />
                         <Route path="proyectos" element={<ProyectosPage />} />
                         <Route path="/" element={< UsuariosPage />} />
                     </Routes>

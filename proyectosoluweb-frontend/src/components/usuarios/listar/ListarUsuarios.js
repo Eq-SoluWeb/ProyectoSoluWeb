@@ -23,8 +23,11 @@ const ListarUsuarios = () => {
                     <thead>
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">Nombre</th>
+                            <th scope="col">Nombre Completo</th>
+                            <th scope="col">Identificación</th>
                             <th scope="col">Email</th>
+                            <th scope="col">Rol</th>
+                            <th scope="col">Estado</th>
                             <th scope="col">Acciones</th>
                         </tr>
                     </thead>
@@ -33,8 +36,11 @@ const ListarUsuarios = () => {
                             data.usuarios.map((usuario, index) => (
                                 <tr key={usuario.id}>
                                     <th scope="row">{index + 1}</th>
-                                    <td>{usuario.nombre} {usuario.apellido}</td>
+                                    <td>{usuario.nombreCompleto} </td>
+                                    <td>{usuario.identificacion} </td>
                                     <td>{usuario.email}</td>
+                                    <td>{usuario.rol} </td>
+                                    <td>{usuario.estado} </td>
                                     <td>
                                         <NavLink className="btn btn-primary mr" to={`/usuarios/${usuario.id}`}>
                                             Editar

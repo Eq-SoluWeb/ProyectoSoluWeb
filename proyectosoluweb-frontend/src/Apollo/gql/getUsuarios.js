@@ -4,9 +4,11 @@ const GET_USUARIOS = gql`
         query {            
             usuarios {
                 id
-                nombre
-                apellido
+                nombreCompleto
+                identificacion
                 email
+                estado
+                rol
             }               
         }
     `;

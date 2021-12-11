@@ -25,7 +25,7 @@ const UsuariosPage = () => {
                                         <NavLink className="btn btn-danger mr-3" to={`/usuarios`}>
                                             Cancelar
                                         </NavLink>
-                                        :
+                                        :                
                                         <NavLink className="btn btn-primary mr-3" to={`/usuarios/crear`}>
                                             Crear Usuario
                                         </NavLink>

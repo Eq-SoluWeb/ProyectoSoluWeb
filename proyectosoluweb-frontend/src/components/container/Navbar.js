@@ -10,7 +10,7 @@ const Navbar = () => {
         navigate('/login', {
             replace: true
         })
-        
+
     }
 
     return (
@@ -27,14 +27,14 @@ const Navbar = () => {
                 <div className="navbar-nav">
 
                     <NavLink
-                        className={ ({isActive}) => 'nav-item nav-link ' + ( isActive ? 'active' : '')}
+                        className={({ isActive }) => 'nav-item nav-link ' + (isActive ? 'active' : '')}
                         to="/usuarios"
                     >
                         Usuarios
                     </NavLink>
 
                     <NavLink
-                        className={ ({isActive}) => 'nav-item nav-link ' + ( isActive ? 'active' : '')}
+                        className={({ isActive }) => 'nav-item nav-link ' + (isActive ? 'active' : '')}
                         to="/proyectos"
                     >
                         Proyectos
@@ -46,9 +46,9 @@ const Navbar = () => {
                 <ul className="navbar-nav ml-auto">
 
                     <span className='nav-item nav-link text-info'>
-                        Jhonny
+                        SoluWeb
                     </span>
-                    
+
                     <button
                         className="nav-item nav-link btn"
                         onClick={handleLogout}

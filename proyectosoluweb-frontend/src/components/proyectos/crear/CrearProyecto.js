@@ -24,7 +24,7 @@ const CrearProyecto = () => {
             <div className="form-group">
                 <input type="text" className='form-control mb-3' placeholder="Nombre del Proyecto" {...register("nombreProyecto", { required: true })} />
                 <input type="text" className='form-control mb-3' placeholder="Fecha de Inicio" {...register("fechaInicio", { required: true })} />
-                <input type="text" className='form-control mb-3' placeholder="Fecha de Terminación" {...register("fechaTerminacion", { required: true, pattern: /^\S+@\S+$/i })} />
+                <input type="text" className='form-control mb-3' placeholder="Fecha de Terminación" {...register("fechaTerminacion", { required: true })} />
                 <input type="text" className='form-control mb-3' placeholder="Objetivos Generales" {...register("objetivosGenerales", { required: true })} />
                 <input type="text" className='form-control mb-3' placeholder="Objetivos Específicos" {...register("objetivosEspecificos", { required: true })} />
                 <input type="text" className='form-control mb-3' placeholder="Presupuesto" {...register("Presupuesto", { required: true })} />

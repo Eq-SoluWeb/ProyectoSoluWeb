@@ -2,7 +2,6 @@ import { useQuery } from '@apollo/client';
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import GET_USUARIOS from '../../../Apollo/gql/getUsuarios';
-
 import '../../components.css';
 
 const ListarUsuarios = () => {
@@ -17,8 +16,7 @@ const ListarUsuarios = () => {
         <>
             {loading && <p>Cargando ...</p>}
             {error && <p>Se ha producido un error</p>}
-            {
-                data &&
+            {data &&
                 <table className="table table-hover">
                     <thead>
                         <tr>
@@ -33,7 +31,7 @@ const ListarUsuarios = () => {
                     </thead>
                     <tbody>
                         {
-                            data.usuarios.map((usuario, index) => (
+                            data.Usuarios.map((usuario, index) => (
                                 <tr key={usuario.id}>
                                     <th scope="row">{index + 1}</th>
                                     <td>{usuario.nombreCompleto} </td>

@@ -23,7 +23,7 @@ const EditarUsuario = () => {
         <div className="registro-container">
         <div className="row justify-content-center align-items-center minh-100">
             <div className="col-md-6 registro-form-1 registro-container">
-                <h3>Ingreso</h3> 
+                <h3>Ingresar los nuevos datos del usuario</h3> 
         <form onSubmit={handleSubmit(handleCreate)}>
             <div className="form-group">
                 <input type="text" className='form-control mb-3' placeholder="Nombre Completo" {...register("nombreCompleto", { required: true })} />

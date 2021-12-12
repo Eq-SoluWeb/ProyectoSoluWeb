@@ -7,6 +7,7 @@ const GET_PROYECTOS = gql`
                 nombreProyecto
                 lider{nombreCompleto}
                 fechaInicio
+                fechaTerminacion
                 estadoProyecto
                 faseProyecto
             }               

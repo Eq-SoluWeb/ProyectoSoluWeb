@@ -29,7 +29,6 @@ const UsuariosPage = () => {
                                         <NavLink className="btn btn-primary mr-3" to={`/usuarios/crear`}>
                                             Crear Usuario
                                         </NavLink>
-
                                 }
                             </div>
                             <div className="card-body">

@@ -30,6 +30,7 @@ import React from 'react'
                                 <th scope="col">Nombre Proyecto</th>
                                 <th scope="col">Lider</th>
                                 <th scope="col">Fecha Inicio</th>
+                                    <th scope="col">Fecha Terminación</th>
                                 <th scope="col">Estado</th>
                                 <th scope="col">Fase</th>
                                 <th scope="col">Acciones</th>
@@ -41,8 +42,9 @@ import React from 'react'
                                     <tr key={proyecto.id}>
                                         <th scope="row">{index + 1}</th>
                                         <td>{proyecto.nombreProyecto} </td>
-                                        <td>{proyecto.lider.nombreCompleto} </td>
+                                        <td>{proyecto.lider} </td>
                                         <td>{proyecto.fechaInicio}</td>
+                                        <td>{proyecto.fechaTerminacion}</td>                                        
                                         <td>{proyecto.estadoProyecto} </td>
                                         <td>{proyecto.faseProyecto} </td>
                                         <td>
@@ -61,8 +63,6 @@ import React from 'react'
             </>
         )
     }
-    
-    
-    
+
 export default ListarProyectos
 

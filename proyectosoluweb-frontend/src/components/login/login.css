@@ -1,7 +1,14 @@
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mr {
+    margin-right: 5px;
+}
 .login-container{
     margin-top: 8%;
-    margin-left: 2%;
-  
+    margin-left: 2%;  
     background-color: white;
 }
 .login-form-1{

@@ -13,10 +13,10 @@ const RegistroPage = () => {
         // navigate('/usuarios')
 
         // reemplazar el historial para no poder regresar a la ruta previa
-        navigate('/usuarios', {
+        navigate('/login', {
             replace: true
         })
-        console.log('registro');
+        console.log('login');
     }
 
     return (
@@ -37,24 +37,16 @@ const RegistroPage = () => {
                             <input
                                 type="text"
                                 className="form-control"
-                                placeholder="Correo"
+                                placeholder="Número de identificación"
+                                name="Identificacion"
+                            />
+                        </div>
+                        <div className="form-group mt-2">
+                            <input
+                                type="text"
+                                className="form-control"
+                                placeholder="Email"
                                 name="Email"
-                            />
-                        </div>
-                        <div className="form-group mt-2">
-                            <input
-                                type="text"
-                                className="form-control"
-                                placeholder="Contraseña"
-                                name="Password"
-                            />
-                        </div>
-                        <div className="form-group mt-2">
-                            <input
-                                type="text"
-                                className="form-control"
-                                placeholder="Contraseña"
-                                name="Password"
                             />
                         </div>
                         <div className="form-group mt-2">
@@ -65,11 +57,24 @@ const RegistroPage = () => {
                                 name="Password"
                             />
                         </div>
-                        <div className="form-group mt-3">
+                        <div className="form-group mt-2">
+                            <input
+                                type="text"
+                                className="form-control"
+                                placeholder="Rol"
+                                name="Rol"
+                            />
+                        </div>
+                        <div className="form-group mt-5">
                             <input
                                 type="submit"
-                                className="btnSubmit"
-                                value="Registro"
+                                className="btnSubmit md-2"
+                                value="Enviar"
+                            />
+                            <input
+                                type="submit"
+                                className="btnSubmit md-2"
+                                value="Ir al Login"
                             />
                         </div>
                     </form>

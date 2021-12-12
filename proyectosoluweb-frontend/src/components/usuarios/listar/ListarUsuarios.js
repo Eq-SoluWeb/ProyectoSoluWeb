@@ -33,7 +33,7 @@ const ListarUsuarios = () => {
                     </thead>
                     <tbody>
                         {
-                            data.usuarios.map((usuario, index) => (
+                            data.Usuarios.map((usuario, index) => (
                                 <tr key={usuario.id}>
                                     <th scope="row">{index + 1}</th>
                                     <td>{usuario.nombreCompleto} </td>

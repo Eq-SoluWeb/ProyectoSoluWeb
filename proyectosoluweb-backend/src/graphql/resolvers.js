@@ -13,7 +13,11 @@ export const resolvers = {
             //if(context.user.auth){
                return Usuario.find();
             //}else {
+
+               // return true
+
             //    return true
+
             //}
         },
         unUsuario(parents, args) {
@@ -25,9 +29,8 @@ export const resolvers = {
         unProyecto(parents, args) {
             return Proyecto.findById(args.id)
         },
-        async avanceProyecto(parents, args) {
-         
-            return await Proyecto.find().populate('avance',"descripcionAvance");
+        async avanceProyecto(parents, args) {         
+            return await Avance.find({idProyecto: args.id});
         },
        
         Inscripciones() {

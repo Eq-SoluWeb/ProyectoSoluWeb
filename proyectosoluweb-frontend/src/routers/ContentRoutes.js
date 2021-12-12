@@ -6,7 +6,8 @@ import UsuariosPage from '../components/usuarios/UsuariosPage';
 
 const ContentRoutes = () => {
     return (
-        <>
+       <>
+        const auth = useAuth();
             <Navbar />
             <div className="container-fluid">
                 <div className="row">

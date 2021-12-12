@@ -3,6 +3,7 @@ import React from 'react'
 import { useForm } from 'react-hook-form';
 import EDITAR_PROYECTO from '../../../Apollo/gql/editProyecto';
 
+
 const EditarProyecto = () => {
 
     const { register, handleSubmit } = useForm();

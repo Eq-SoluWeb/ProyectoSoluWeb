@@ -6,7 +6,7 @@ import React from 'react'
     import { NavLink, useParams } from 'react-router-dom'
     import GET_PROYECTOS from '../../../Apollo/gql/getProyectos';
     
-    import '../../components.css';
+    import '../proyectos.css';
     
     const ListarProyectos = () => {
     

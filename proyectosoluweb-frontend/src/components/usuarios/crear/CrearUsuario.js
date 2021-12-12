@@ -3,6 +3,8 @@ import React from 'react'
 import { useForm } from 'react-hook-form';
 import SET_USUARIO from '../../../Apollo/gql/setUsuario';
 
+import '../usuarios.css';
+
 const CrearUsuario = () => {
 
     const { register, handleSubmit } = useForm();

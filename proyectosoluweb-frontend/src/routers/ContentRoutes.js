@@ -2,6 +2,7 @@ import React from 'react'
 import { Routes, Route } from "react-router-dom";
 import Navbar from '../components/container/Navbar'
 import ProyectosPage from '../components/proyectos/ProyectosPage';
+import RegistroPage from '../components/registro/RegistroPage';
 import UsuariosPage from '../components/usuarios/UsuariosPage';
 
 const ContentRoutes = () => {
@@ -15,7 +16,7 @@ const ContentRoutes = () => {
                         <Route path="usuarios" element={<UsuariosPage />} />
                         <Route path="proyectos/:action" element={<ProyectosPage />} />
                         <Route path="proyectos" element={<ProyectosPage />} />
-                        <Route path="/" element={< UsuariosPage />} />
+                        <Route path="/" element={< RegistroPage />} />
                     </Routes>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink, useParams } from 'react-router-dom';
-import '../components.css';
+import './usuarios.css';
 import CrearUsuario from './crear/CrearUsuario';
 import EditarUsuario from './editar/EditarUsuario';
 import ListarUsuarios from './listar/ListarUsuarios';
@@ -22,11 +22,11 @@ const UsuariosPage = () => {
                                 {
                                     action !== undefined ?
 
-                                        <NavLink className="btn btn-danger mr-3" to={`/usuarios`}>
+                                        <NavLink className="btn btn-danger mr-0" to={`/usuarios`}>
                                             Cancelar
                                         </NavLink>
                                         :                
-                                        <NavLink className="btn btn-primary mr-3" to={`/usuarios/crear`}>
+                                        <NavLink className="btn btn-primary mr-0" to={`/usuarios/crear`}>
                                             Crear Usuario
                                         </NavLink>
                                 }

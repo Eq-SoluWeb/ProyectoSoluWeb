@@ -1,8 +1,9 @@
 import { useMutation } from '@apollo/client';
 import React from 'react'
 import { useForm } from 'react-hook-form';
-import './registro.css';
 import SET_USUARIO from '../../../Apollo/gql/setUsuario';
+
+import '../usuarios.css';
 
 const EditarUsuario = () => {
     const { register, handleSubmit } = useForm();

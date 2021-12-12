@@ -1,6 +1,6 @@
 import React from 'react'
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import LoginPage from '../components/login/LoginPage';
+import RegistroPage from '../components/registro/RegistroPage';
 import ContentRoutes from './ContentRoutes';
 
 const AppRouter = () => {
@@ -8,7 +8,7 @@ const AppRouter = () => {
         
         <BrowserRouter>
             <Routes>
-                <Route path="/login" element={<LoginPage />} />
+                <Route path="/registro" element={<RegistroPage />} />
 
                 <Route path="/*" element={<ContentRoutes />} />
 

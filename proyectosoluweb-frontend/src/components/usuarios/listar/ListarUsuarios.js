@@ -3,7 +3,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import GET_USUARIOS from '../../../Apollo/gql/getUsuarios';
 
-import '../../components.css';
+import '../usuarios.css';
 
 const ListarUsuarios = () => {
 

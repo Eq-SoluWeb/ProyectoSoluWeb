@@ -7,7 +7,7 @@ const Navbar = () => {
 
     const handleLogout = () => {
 
-        navigate('/login', {
+        navigate('/registro', {
             replace: true
         })
 

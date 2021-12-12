@@ -21,7 +21,7 @@ const LoginPage = () => {
 
     return (
         <div className="login">
-            <div className="row">
+            <div className="row justify-content-center align-items-center minh-100">
                 <div className="col-md-6 login-form-1 login-container">
                     <h3>Ingreso</h3>
                     <form onSubmit={handleLogin}>

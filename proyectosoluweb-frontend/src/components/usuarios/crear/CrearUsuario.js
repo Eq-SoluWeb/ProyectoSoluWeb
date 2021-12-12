@@ -13,9 +13,9 @@ const CrearUsuario = () => {
         console.log('crear');
         console.log(data);
 
-        const { nombre, apellido, email, password, rol } = data;
+        const { nombreCompleto,identificacion, email, password, rol } = data;
 
-        crearUsuario({ variables: { nombre, apellido, email, password, rol } })
+        crearUsuario({ variables: { nombreCompleto, identificacion, email, password, rol } })
 
     }
 
@@ -27,8 +27,8 @@ const CrearUsuario = () => {
                 <input type="text" className='form-control mb-3' placeholder="Email" {...register("email", { required: true, pattern: /^\S+@\S+$/i })} />
                 <input type="password" className='form-control mb-3' placeholder="Password" {...register("password", { required: true })} />
                 <select className='form-control mb-3' {...register("rol", { required: true })}>
-                    <option value="61b3da5944cb44958d979092">lider</option>
-                    <option value="61b3da6a44cb44958d979097">estudiante</option>
+                    <option value="Lider">Lider</option>
+                    <option value="Estudiante">Estudiante</option>
                 </select>
 
             </div>

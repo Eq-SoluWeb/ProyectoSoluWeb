@@ -5,6 +5,7 @@ import ContentRoutes from './ContentRoutes';
 
 const AppRouter = () => {
     return (
+        
         <BrowserRouter>
             <Routes>
                 <Route path="/login" element={<LoginPage />} />

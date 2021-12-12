@@ -7,7 +7,7 @@ const typeDefs = `
         unUsuario(id:ID): Usuario,
         Proyectos: [Proyecto],
         unProyecto(id:ID): Proyecto,
-        avanceProyecto(id:ID):AvanceProyecto,
+        avanceProyecto(id:ID):Avance,
         Inscripciones: [Inscripcion],
         unaInscripcion(id:ID): Inscripcion,
         Avances: [Avance],
@@ -16,8 +16,7 @@ const typeDefs = `
         UsuariosEstudiantes: [Usuario],
         SolicitudesPendientes:[Solicitud],
         MisProyectos(idUsuario:ID!):[Proyecto],
-        Solicitud:[Solicitud],
-    
+        Solicitud:[Solicitud], 
 
     }
 

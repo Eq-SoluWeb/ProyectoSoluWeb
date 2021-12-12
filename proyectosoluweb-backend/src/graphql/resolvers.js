@@ -10,11 +10,15 @@ import { generarJwt } from "../helpers/jwt";
 export const resolvers = {
     Query: {
         Usuarios(_,args,context) {
-            if(context.user.auth){
+            //if(context.user.auth){
                return Usuario.find();
-            }else {
-                return true
-            }
+            //}else {
+
+               // return true
+
+            //    return true
+
+            //}
         },
         unUsuario(parents, args) {
             return Usuario.findById(args.id)
@@ -25,9 +29,8 @@ export const resolvers = {
         unProyecto(parents, args) {
             return Proyecto.findById(args.id)
         },
-        async avanceProyecto(parents, args) {
-         
-            return await Proyecto.find().populate('avance',"descripcionAvance");
+        async avanceProyecto(parents, args) {         
+            return await Avance.find({idProyecto: args.id});
         },
        
         Inscripciones() {

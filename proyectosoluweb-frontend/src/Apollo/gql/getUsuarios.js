@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {gql} from '@apollo/client';
 
 const GET_USUARIOS=gql`query{
@@ -12,3 +13,21 @@ const GET_USUARIOS=gql`query{
     }
   }`;
   export default GET_USUARIOS
+=======
+import { gql } from '@apollo/client'
+
+const GET_USUARIOS = gql`
+        query {            
+            Usuarios {
+                id
+                nombreCompleto
+                identificacion
+                email
+                estado
+                rol
+            }               
+        }
+    `;
+
+export default GET_USUARIOS;
+>>>>>>> Feature_JR

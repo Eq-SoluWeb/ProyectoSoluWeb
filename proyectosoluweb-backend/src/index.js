@@ -9,7 +9,7 @@ const app = express();
 
 dbConnection();
 app.use(cors());
-app.use(validarJwt);
+//app.use(validarJwt);
 app.use("/graphql", graphqlHTTP((req,)=>({
     graphiql: true,
     schema: schema,

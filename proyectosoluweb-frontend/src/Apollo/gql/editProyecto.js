@@ -1,21 +1,19 @@
-import { gql } from '@apollo/client'
+import { gql,useMutation  } from '@apollo/client'
 
 const EDITAR_PROYECTO = gql`
-        mutation ActualizarDatosProyecto(id:$id) {            
-            Proyectos {
-                id
-                nombreProyecto
-                objetivosGenerales
-                objetivosEspecificos
-                presupuesto
-                fechaInicio
-                fechaterminacion
-                lider
-                estadoProyecto
-                faseProyecto
-
-            }               
-        }
+        mutation editProyecto($id:ID!,
+                    $nombreProyecto:[String],
+                    $objetivosGenerales:[String],
+                    $objectivosEspecificos:[String])
+                {
+                    ActualizarDatosProyecto(Proyecto: {            
+                       
+                        nombreProyecto:$nombreProyecto
+                        objetivosGenerales:$objetivosGenerles
+                        objetivosEspecificos:$objetivosEspecificos
+                       
+                    })
+                }
     `;
 
 export default EDITAR_PROYECTO;

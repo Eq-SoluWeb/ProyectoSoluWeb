@@ -1,17 +1,14 @@
 import React from 'react'
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import RegistroPage from '../components/registro/RegistroPage';
+import PortadaPage from '../components/portada/PortadaPage';
 import ContentRoutes from './ContentRoutes';
 
 const AppRouter = () => {
-    return (
-        
+    return (        
         <BrowserRouter>
             <Routes>
-                <Route path="/registro" element={<RegistroPage />} />
-
+                <Route path="/portada" element={<PortadaPage />} />
                 <Route path="/*" element={<ContentRoutes />} />
-
             </Routes>
         </BrowserRouter>
     )

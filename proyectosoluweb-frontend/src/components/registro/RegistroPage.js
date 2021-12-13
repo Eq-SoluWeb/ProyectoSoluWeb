@@ -1,8 +1,12 @@
-import React from 'react'
+import { useMutation } from '@apollo/client';
+import { useForm } from 'react-hook-form';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './registro.css';
 
 const RegistroPage = () => {
+
+    const { register, handleSubmit } = useForm();
 
     const navigate = useNavigate();
 
@@ -57,23 +61,20 @@ const RegistroPage = () => {
                                 name="Password"
                             />
                         </div>
-                        <div className="form-group mt-2">
-                            <input
-                                type="text"
-                                className="form-control"
-                                placeholder="Rol"
-                                name="Rol"
-                            />
-                        </div>
+                        <select className='form-control mb-3 mt-2' {...register("rol", { required: true })}>
+                            <option disabled-selected>Elija su rol</option>
+                            <option value="Lider">Lider</option>
+                            <option value="Estudiante">Estudiante</option>
+                        </select>
                         <div className="form-group mt-5">
                             <input
                                 type="submit"
-                                className="btnSubmit md-2"
+                                className="btnSubmit"
                                 value="Enviar"
                             />
                             <input
                                 type="submit"
-                                className="btnSubmit md-2"
+                                className="btnSubmit"
                                 value="Ir al Login"
                             />
                         </div>

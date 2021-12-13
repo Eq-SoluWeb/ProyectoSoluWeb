@@ -3,11 +3,13 @@ import { Link, NavLink, useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
 
+    const perfil = "inicio";
+
     const navigate = useNavigate();
 
     const handleLogout = () => {
 
-        navigate('/registro', {
+        navigate('/', {
             replace: true
         })
 
@@ -23,16 +25,25 @@ const Navbar = () => {
                 Gestor de Proyectos
             </Link>
 
-            <div className="navbar-collapse">
-                <div className="navbar-nav">
-
+            {
+                perfil === 'estudiante' && <div className="navbar-collapse">
                     <NavLink
                         className={({ isActive }) => 'nav-item nav-link ' + (isActive ? 'active' : '')}
                         to="/usuarios"
                     >
                         Usuarios
                     </NavLink>
+                </div>
+            }
 
+            {
+                perfil === 'lider' && <div className="navbar-collapse">
+                    <NavLink
+                        className={({ isActive }) => 'nav-item nav-link ' + (isActive ? 'active' : '')}
+                        to="/usuarios"
+                    >
+                        Usuarios
+                    </NavLink>
                     <NavLink
                         className={({ isActive }) => 'nav-item nav-link ' + (isActive ? 'active' : '')}
                         to="/proyectos"
@@ -40,9 +51,20 @@ const Navbar = () => {
                         Proyectos
                     </NavLink>
                 </div>
-            </div>
+            }
 
-            <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end">
+            {
+                perfil === "inicio" && <div className="navbar-collapse">
+                    <NavLink
+                        className={({ isActive }) => 'nav-item nav-link ' + (isActive ? 'active' : '')}
+                        to="/registro"
+                    >
+                        Registro
+                    </NavLink>
+                </div>
+            }
+            
+            <div className="navbar-collapse collapse w-40 order-3 dual-collapse2 d-flex justify-content-end">
                 <ul className="navbar-nav ml-auto">
 
                     <span className='nav-item nav-link text-info'>

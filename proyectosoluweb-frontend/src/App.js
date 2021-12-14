@@ -1,9 +1,12 @@
-import './App.css';
+import React from 'react'
+import AppRouter from './routers/AppRouter'
 
-function App() {
+const App = () => {
   return (
-    <center><h1>Equipo SoluWeb</h1></center>
-  );
+    <div>
+      <AppRouter />
+    </div>
+  )
 }
 
-export default App;
+export default App

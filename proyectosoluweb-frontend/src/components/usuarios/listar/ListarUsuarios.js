@@ -2,8 +2,12 @@ import { useQuery } from '@apollo/client';
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import GET_USUARIOS from '../../../Apollo/gql/getUsuarios';
+<<<<<<< HEAD
+import '../../components.css';
+=======
 
 import '../usuarios.css';
+>>>>>>> Feature_CS
 
 const ListarUsuarios = () => {
 
@@ -17,8 +21,7 @@ const ListarUsuarios = () => {
         <>
             {loading && <p>Cargando ...</p>}
             {error && <p>Se ha producido un error</p>}
-            {
-                data &&
+            {data &&
                 <table className="table table-hover">
                     <thead>
                         <tr>

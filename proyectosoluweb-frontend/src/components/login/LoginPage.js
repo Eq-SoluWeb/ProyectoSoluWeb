@@ -23,14 +23,14 @@ const LoginPage = () => {
         <div className="login">
             <div className="row justify-content-center align-items-center minh-100">
                 <div className="col-md-6 login-form-1 login-container">
-                    <h3>Ingreso</h3>
+                    <h3>Login</h3>
                     <form onSubmit={handleLogin}>
                         <div className="form-group">
                             <input
                                 type="text"
                                 className="form-control"
                                 placeholder="Correo"
-                                name="lEmail"
+                                name="Email"
                             />
                         </div>
                         <div className="form-group mt-2">
@@ -38,15 +38,17 @@ const LoginPage = () => {
                                 type="password"
                                 className="form-control"
                                 placeholder="Contraseña"
-                                name="lPassword"
+                                name="Password"
                             />
                         </div>
-                        <div className="form-group mt-3">
-                            <input
-                                type="submit"
-                                className="btnSubmit" 
-                                value="Login"
-                            />
+                        <div className="form-group mt-4">
+                            <center>
+                                <input
+                                    type="submit"
+                                    className="btnSubmit"
+                                    value="Enviar"
+                                />
+                            </center>
                         </div>                        
                     </form>
                 </div>

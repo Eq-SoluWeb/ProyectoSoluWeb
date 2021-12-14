@@ -29,10 +29,10 @@ const CrearUsuario = () => {
                 <input type="text" className='form-control mb-3' placeholder="Email" {...register("email", { required: true, pattern: /^\S+@\S+$/i })} />
                 <input type="password" className='form-control mb-3' placeholder="Password" {...register("password", { required: true })} />
                 <select className='form-control mb-3' {...register("rol", { required: true })}>
+                    <option value="Administrador">Administrador</option>
                     <option value="Lider">Lider</option>
                     <option value="Estudiante">Estudiante</option>
                 </select>
-
             </div>
             <input type="submit" />
 

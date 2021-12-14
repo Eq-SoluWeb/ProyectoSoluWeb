@@ -34,15 +34,17 @@ const RegistroPage = () => {
                                 type="text"
                                 className="form-control"
                                 placeholder="Nombre Completo"
-                                name="Nombre"
-                            />
+                                name="nombre"
+                                {...register("nombreCompleto", { required: true })}
+                            />                            
                         </div>
                         <div className="form-group mt-2">
                             <input
                                 type="text"
                                 className="form-control"
                                 placeholder="Número de identificación"
-                                name="Identificacion"
+                                name="identificacion"
+                                {...register("identificacion", { required: true })}
                             />
                         </div>
                         <div className="form-group mt-2">
@@ -50,7 +52,8 @@ const RegistroPage = () => {
                                 type="text"
                                 className="form-control"
                                 placeholder="Email"
-                                name="Email"
+                                name="email"
+                                {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
                             />
                         </div>
                         <div className="form-group mt-2">
@@ -58,25 +61,24 @@ const RegistroPage = () => {
                                 type="password"
                                 className="form-control"
                                 placeholder="Contraseña"
-                                name="Password"
+                                name="password"
+                                {...register("password", { required: true })}
                             />
                         </div>
                         <select className='form-control mb-3 mt-2' {...register("rol", { required: true })}>
                             <option disabled-selected>Elija su rol</option>
+                            <option value="Administrador">Administrador</option>
                             <option value="Lider">Lider</option>
                             <option value="Estudiante">Estudiante</option>
                         </select>
-                        <div className="form-group mt-5">
-                            <input
-                                type="submit"
-                                className="btnSubmit"
-                                value="Enviar"
-                            />
-                            <input
-                                type="submit"
-                                className="btnSubmit"
-                                value="Ir al Login"
-                            />
+                        <div className="form-group mt-4">
+                            <center>
+                                <input
+                                    type="submit"
+                                    className="btnSubmit"
+                                    value="Enviar"
+                                />             
+                            </center>               
                         </div>
                     </form>
                 </div>

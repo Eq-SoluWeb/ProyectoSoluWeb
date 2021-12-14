@@ -61,6 +61,12 @@ const Navbar = () => {
                     >
                         Registro
                     </NavLink>
+                    <NavLink
+                        className={({ isActive }) => 'nav-item nav-link ' + (isActive ? 'active' : '')}
+                        to="/login"
+                    >
+                        Login
+                    </NavLink>
                 </div>
             }
             

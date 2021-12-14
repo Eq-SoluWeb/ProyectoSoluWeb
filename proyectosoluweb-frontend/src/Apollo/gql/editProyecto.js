@@ -1,8 +1,8 @@
-import { gql,useMutation  } from '@apollo/client'
+import { gql } from '@apollo/client'
 
 const EDITAR_PROYECTO = gql`
         mutation editProyecto($id:ID!,
-                    $nombreProyecto:[String],
+                    $nombreProyecto:String,
                     $objetivosGenerales:[String],
                     $objectivosEspecificos:[String])
                 {

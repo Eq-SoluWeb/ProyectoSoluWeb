@@ -1,27 +1,27 @@
-import { gql } from '@apollo/client'
+import { gql } from '@apollo/client';
+ 
 
 const SET_PROYECTO = gql`
-        mutation setProyecto($nombreProyecto: String!, $fechaI: String!, $fechaT: String!, $objetivosG: [String], $objetivosE: [String], $presupuesto: Int!, $lider: String! ){            
+        mutation setProyecto($nombreProyecto: String, 
+                             $fechaInicio: String, 
+                             $fechaTerminacion: String, 
+                             $objetivosGenerales: [String], 
+                             $objetivosEspecificos: [String], 
+                             $presupuesto: Int, 
+                             $lider: String )
+                  {    
             AgregarProyecto(proyecto : {
                 nombreProyecto: $nombreProyecto,
-                fechaInicio: $fechaI,
-                fechaTerminacion: $FechaT,
-                objetivosGenerales: $objetivosG,
-                objetivosEspecificos: $objetivosE,
-                presupuesto: $presupuesto
+                objetivosGenerales: $objetivosGenerales,
+                objetivosEspecificos:$objetivosEspecificos,
+                presupuesto: $presupuesto,
+                fechaInicio: $fechaInicio,
+                fechaTerminacion: $fechaTerminacion,
                 lider: $lider
             }) {
                 nombreProyecto
-                fechaInicio
-                fechaTerminacion
-                objetivosGenerales
-                objetivosEspecificos
-                presupuesto
-                lider{
-                    id
-                    nombreCompleto
-                    identiicacion
-                }
+               
+               
             }               
         }
     `;

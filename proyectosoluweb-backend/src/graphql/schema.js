@@ -129,7 +129,7 @@ const typeDefs = `
 
 
     input ProyectoInput {
-        id: ID,
+     
         nombreProyecto : String,
         objetivosGenerales : [String],
         objetivosEspecificos : [String],
@@ -137,8 +137,7 @@ const typeDefs = `
         fechaInicio : String,
         fechaTerminacion : String,
         lider : String,
-        estadoProyecto : String,
-        faseProyecto: String,
+       
     }
     
    

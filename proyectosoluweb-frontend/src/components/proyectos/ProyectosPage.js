@@ -10,7 +10,6 @@ const ProyectosPage = () => {
     const { action } = useParams();
 
     console.log(action);
-
     return (
         <section className="content mt-5">
             <div className="container-fluid">
@@ -32,8 +31,9 @@ const ProyectosPage = () => {
 
                                 }
                             </div>
+                           
                             <div className="card-body">
-                                {action === '' || action === undefined ? <ListarProyectos /> : (action === 'crear') ? <CrearProyecto /> : <EditarProyecto />}
+                                {action === '' || action === undefined ? <ListarProyectos /> : (action === 'crear') ? <CrearProyecto /> : <EditarProyecto/>}
                             </div>
                         </div>
                     </div>

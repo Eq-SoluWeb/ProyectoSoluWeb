@@ -1,9 +1,10 @@
 import React from 'react'
 import { NavLink, useParams } from 'react-router-dom';
-import '../components.css';
 import CrearProyecto from './crear/CrearProyecto';
 import EditarProyecto from './editar/EditarProyecto';
 import ListarProyectos from './listar/ListarProyectos';
+
+import './proyectos.css';
 
 const ProyectosPage = () => {
 

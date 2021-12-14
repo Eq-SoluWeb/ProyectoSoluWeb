@@ -6,36 +6,32 @@
 .mr {
     margin-right: 5px;
 }
-.login-container{
-    margin-top: 8%;
-<<<<<<< HEAD
-    margin-left: 20%;
-=======
+.portada-container{
+    margin-top: 50%;
     margin-left: 2%;  
->>>>>>> Feature_CS
     background-color: white;
 }
-.login-form-1{
+.portada-form-1{
     border-radius: 5px;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
-    padding: 1%;
+    padding: 10%;
 }
-.login-form-1 h3{
+.portada-form-1 h3{
     text-align: center;
     color: #333;
 }
-.login-form-2{
+.portada-form-2{
     border-radius: 5px;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
-    padding: 1%;
+    padding: 10%;
     background: #0062cc;
 }
-.login-form-2 h3{
+.portada-form-2 h3{
     text-align: center;
     color: #fff;
 }
-.login-container form{
-    padding: 1%;
+.portada-container form{
+    padding: 10%;
 }
 .btnSubmit
 {
@@ -45,29 +41,31 @@
     border: none;
     cursor: pointer;
 }
-.login-form-1 .btnSubmit{
+.portada-form-1 .btnSubmit{
     color: #fff;
     background-color: #0062cc;
 }
-.login-form-2 .btnSubmit{
+.portada-form-2 .btnSubmit{
     background-color: #fff;
     color: #0062cc;
 }
-.login-form-2 .ForgetPwd{
+.portada-form-2 .ForgetPwd{
     color: #fff;
     font-weight: 600;
     text-decoration: none;
 }
-.login-form-1 .ForgetPwd{
+.portada-form-1 .ForgetPwd{
     color: #0062cc;
     font-weight: 600;
     text-decoration: none;
 }
 
-.login {
+.portada {
+    background-color: #0062cc;
     overflow: hidden;
     background-image: url('https://photoshop-kopona.com/uploads/posts/2019-01/1546877366_flare_cold_1.jpg');
     height: 100vh;
     align-items: center;
+    padding: 10%;
 
 }

@@ -2,7 +2,12 @@ import { useQuery } from '@apollo/client';
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import GET_USUARIOS from '../../../Apollo/gql/getUsuarios';
+<<<<<<< HEAD
 import '../../components.css';
+=======
+
+import '../usuarios.css';
+>>>>>>> Feature_CS
 
 const ListarUsuarios = () => {
 
